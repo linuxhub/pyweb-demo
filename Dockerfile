@@ -9,6 +9,6 @@ RUN set -xe \
     && apk add --no-cache bash bash-doc bash-completion \
     && pip install -r ./requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
-EXPOSE 5000
 
-CMD ["python","main.py"]
+CMD ["python","main.py","5000"]
+EXPOSE 5000
